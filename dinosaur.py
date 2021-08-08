@@ -1,12 +1,12 @@
 class Dinosaur:
 
 
-def __init__(self):
-    self.name = ""
-    self.health = 100
-    self.attack = 10
-    self.dino_name = ()
+    def __init__(self, name, strength, defense, health):
+        self.name = name
+        self.strength = strength
+        self.defense = defense
+        self.health = health
 
-def dino_name(self):
-    self.name = input("Enter your dinosaur's name.")
-    print("Dinosaur Name", self.name)
+    def dino_name(self):
+        self.name = input("Enter your dino's name.")
+        print(self.name)
