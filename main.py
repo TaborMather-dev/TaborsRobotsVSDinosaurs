@@ -1,11 +1,5 @@
-from fleet import Fleet
+from battlefield import Battlefield
 
 
-
-theFleet = Fleet()
-
-
-theFleet.create_robots()
-
-
-print(theFleet.Robot_List)
+battle = Battlefield()
+battle.start_game()

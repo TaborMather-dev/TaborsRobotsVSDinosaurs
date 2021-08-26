@@ -1,12 +1,13 @@
+from weapon import Weapon
+
+
 class Dinosaur:
 
-
-    def __init__(self, name, strength, defense, health):
+    def __init__(self, name):
         self.name = name
-        self.strength = strength
-        self.defense = defense
-        self.health = health
+        self.health = 10
+        self.weapon = Weapon('Teeth', 3)
 
-    def dino_name(self):
-        self.name = input("Enter your dino's name.")
-        print(self.name)
+    def bite(self, robot):
+        robot.health = robot.health - self.attack_power
+        print(f"Hit! Robot health is now {robot.health}")
